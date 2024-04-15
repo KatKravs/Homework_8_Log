@@ -1,5 +1,6 @@
 package com.ait.qa34;
 
+import com.project.models.NewUser;
 import com.project.models.User;
 import com.project.utils.DataProviders;
 import org.testng.Assert;
@@ -31,12 +32,12 @@ public class LoginTests extends TestBase{
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isValidationSummaryErrorsPresent());
     }
-//    @Test(dataProvider = "addNewContactFromCsvFile", dataProviderClass = DataProviders.class)
-//    public void addContactPositiveTestFromDataProviderWithScvFile(User user) {
-//        app.getUser().clickOnLoginLink();
-//        app.getUser().fillLoginForm(user);
-//        app.getUser().clickOnLoginButton();
-//        Assert.assertTrue(app.getUser().isLogOutLinkPresent());
-//    }
+    @Test(dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
+    public void addNewUserPositiveTestFromDataProviderWithScvFile(NewUser newuser) {
+        app.getNewUser().clickOnRegisterLink();
+        app.getNewUser().fillRegisterForm(newuser);
+        app.getNewUser().clickOnRegisterButton();
+        Assert.assertTrue(app.getUser().isLogOutLinkPresent());
+    }
 
 }

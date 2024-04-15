@@ -13,16 +13,16 @@ public class CreateAccountTest extends TestBase {
         }
     }
 
-    @Test
-
-    public void createNewAccountPositivTest() {
-        app.getUser().clickOnRegisterLink();
-        app.getUser().fillRegisterForm("John", "Smith");
-        app.getUser().fillRandomRegisterForm("katkate@gmail.com", "Sa12345!");
-        app.getUser().clickOnRegisterButton();
-        app.getUser().clickOnContinueButton();
-        Assert.assertTrue(app.getUser().isAccountLinkPresent());
-        System.out.println(app.getUser().isAccountLinkPresent());
-    }
+//    @Test
+//
+////    public void createNewAccountPositivTest() {
+////        app.getNewUser().clickOnRegisterLink();
+////        app.getNewUser().fillRegisterForm("Tatiana","Kartash","gsgs@gmai.com","Hgf435_s","Hgf435_s");
+////        app.getNewUser().fillRandomRegisterForm("katkate@gmail.com", "Sa12345!");
+////        app.getNewUser().clickOnRegisterButton();
+////        app.getNewUser().clickOnContinueButton();
+////        Assert.assertTrue(app.getUser().isAccountLinkPresent());
+////        System.out.println(app.getUser().isAccountLinkPresent());
+////    }
 
 }

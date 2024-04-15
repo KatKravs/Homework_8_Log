@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">16.328s</div>
+<div class="counter">22.198s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="percent">75%</div>
 <p>successful</p>
 </div>
 </td>
@@ -73,15 +73,15 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="loginPositiveTest"></a>
-<h3 class="failures">loginPositiveTest</h3>
+<a name="addNewUserPositiveTestFromDataProviderWithScvFile[2](NewUser{email='sfffa@gmail.com', password='Ghjskds65!hss', firstName='Alena', lastName='Juk', confirmPassword='Fgsgha45-6'})"></a>
+<h3 class="failures">addNewUserPositiveTestFromDataProviderWithScvFile[2](NewUser{email='sfffa@gmail.com', password='Ghjskds65!hss', firstName='Alena', lastName='Juk', confirmPassword='Fgsgha45-6'})</h3>
 <span class="code">
 <pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.ait.qa34.LoginTests.loginPositiveTest(LoginTests.java:24)
+	at com.ait.qa34.LoginTests.addNewUserPositiveTestFromDataProviderWithScvFile(LoginTests.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,19 +143,46 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">loginPositiveTest</td>
-<td class="failures">16.328s</td>
+<td class="success">addNewUserPositiveTestFromDataProviderWithScvFile[0](NewUser{email='gsgs@gmai.com', password='Hgf435_s', firstName='Tatiana', lastName='Kartash', confirmPassword='Hgf435_s'})</td>
+<td class="success">2.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addNewUserPositiveTestFromDataProviderWithScvFile[1](NewUser{email='sgsfa@gmail.com', password='Fgsgha45-6', firstName='Aleksey', lastName='Kartash', confirmPassword='Fgsgha45-6'})</td>
+<td class="success">1.970s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">addNewUserPositiveTestFromDataProviderWithScvFile[2](NewUser{email='sfffa@gmail.com', password='Ghjskds65!hss', firstName='Alena', lastName='Juk', confirmPassword='Fgsgha45-6'})</td>
+<td class="failures">16.357s</td>
 <td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">addNewUserPositiveTestFromDataProviderWithScvFile[3](NewUser{email='dgsgdns@gmail.com', password='Fhdhsjs76_s', firstName='Dmitriy', lastName='Malikov', confirmPassword='Fhdhsjs76_s'})</td>
+<td class="success">1.859s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:32:20.825 [Test worker] INFO  com.ait.qa34.TestBase -- Start test loginPositiveTestwith data:[]
-14:32:37.452 [Test worker] ERROR com.ait.qa34.TestBase -- FAILED loginPositiveTestScreenshotC:\QA\QA34_FirstSeleniumProjectHW\screenshots\screen-1712925157429.png
-14:32:37.453 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
-14:32:37.453 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+<pre>23:41:59.358 [Test worker] INFO  com.ait.qa34.TestBase -- Start test addNewUserPositiveTestFromDataProviderWithScvFilewith data:[NewUser{email='gsgs@gmai.com', password='Hgf435_s', firstName='Tatiana', lastName='Kartash', confirmPassword='Hgf435_s'}]
+23:42:01.412 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED addNewUserPositiveTestFromDataProviderWithScvFile
+23:42:01.413 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:42:01.413 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+23:42:01.416 [Test worker] INFO  com.ait.qa34.TestBase -- Start test addNewUserPositiveTestFromDataProviderWithScvFilewith data:[NewUser{email='sgsfa@gmail.com', password='Fgsgha45-6', firstName='Aleksey', lastName='Kartash', confirmPassword='Fgsgha45-6'}]
+23:42:18.919 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED addNewUserPositiveTestFromDataProviderWithScvFile
+23:42:18.920 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:42:18.920 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+23:42:18.926 [Test worker] INFO  com.ait.qa34.TestBase -- Start test addNewUserPositiveTestFromDataProviderWithScvFilewith data:[NewUser{email='sfffa@gmail.com', password='Ghjskds65!hss', firstName='Alena', lastName='Juk', confirmPassword='Fgsgha45-6'}]
+23:42:51.188 [Test worker] ERROR com.ait.qa34.TestBase -- FAILED addNewUserPositiveTestFromDataProviderWithScvFileScreenshotC:\QA\QA34_FirstSeleniumProjectHW\screenshots\screen-1713044571173.png
+23:42:51.188 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:42:51.188 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+23:42:51.188 [Test worker] INFO  com.ait.qa34.TestBase -- Start test addNewUserPositiveTestFromDataProviderWithScvFilewith data:[NewUser{email='dgsgdns@gmail.com', password='Fhdhsjs76_s', firstName='Dmitriy', lastName='Malikov', confirmPassword='Fhdhsjs76_s'}]
+23:42:53.069 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED addNewUserPositiveTestFromDataProviderWithScvFile
+23:42:53.069 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:42:53.069 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
 </pre>
 </span>
 </div>
@@ -167,7 +194,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2</a> at 12.04.2024, 14:32:38</p>
+<a href="http://www.gradle.org">Gradle 8.2</a> at 13.04.2024, 23:42:53</p>
 </div>
 </div>
 </body>

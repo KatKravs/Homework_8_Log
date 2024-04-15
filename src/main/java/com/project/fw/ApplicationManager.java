@@ -1,5 +1,6 @@
 package com.project.fw;
 
+import com.project.models.NewUser;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,6 +14,7 @@ public class ApplicationManager{
 
     UserHelper user;
     ShoppingCartHelper cartHelper;
+    RegestrationHelper newUser;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -36,6 +38,7 @@ public class ApplicationManager{
 
         user = new UserHelper(driver);
         cartHelper = new ShoppingCartHelper(driver);
+        newUser = new RegestrationHelper(driver);
     }
 
     public UserHelper getUser() {
@@ -44,6 +47,10 @@ public class ApplicationManager{
 
     public ShoppingCartHelper getCartHelper() {
         return cartHelper;
+    }
+
+    public RegestrationHelper getNewUser() {
+        return newUser;
     }
 
     public  void stop() {
