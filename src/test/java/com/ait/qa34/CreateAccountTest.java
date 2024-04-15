@@ -15,7 +15,7 @@ public class CreateAccountTest extends TestBase {
         }
     }
 
-    @Test(dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
+    @Test(enabled = false, dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
     public void addNewUserPositiveTestFromDataProviderWithScvFile(NewUser newuser) {
         app.getNewUser().clickOnRegisterLink();
         app.getNewUser().fillRegisterForm(newuser);

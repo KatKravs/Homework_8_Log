@@ -25,10 +25,6 @@ public class UserHelper extends BaseHelper {
 
 
 
-
-
-
-
     public boolean isLogOutLinkPresent() {
         return isElementPresent(By.cssSelector("[href='/logout']"));
     }
