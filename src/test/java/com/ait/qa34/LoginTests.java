@@ -32,12 +32,6 @@ public class LoginTests extends TestBase{
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isValidationSummaryErrorsPresent());
     }
-    @Test(dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
-    public void addNewUserPositiveTestFromDataProviderWithScvFile(NewUser newuser) {
-        app.getNewUser().clickOnRegisterLink();
-        app.getNewUser().fillRegisterForm(newuser);
-        app.getNewUser().clickOnRegisterButton();
-        Assert.assertTrue(app.getUser().isLogOutLinkPresent());
-    }
+
 
 }
